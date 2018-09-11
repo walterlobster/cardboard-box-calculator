@@ -1,0 +1,580 @@
+
+<link rel="stylesheet" href="https://github.com/walterlobster/calc.git/cardboard-box-calculator-stylesheet.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+<style>
+    .radio-button {
+        display: none;
+    }
+    .row {
+        border-bottom: none !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .card {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    .card-header {
+        background: #1b458f;
+        color: white;
+    }
+    .email-row {
+        display: none;
+    }
+    .grand-total, .price-per-box {
+        display: flex;
+        flex-direction: row;
+    }
+</style>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <h3 class="card-header">Cardboard Box Calculator</h3>
+                <div class="card-block">
+                    <div class="card-text">
+						<p><h3>Instant 0201 FEFCO Style Box Quote</h3>
+                        <p>SCD Packaging supply Custom Cardboard Boxes made to your bespoke specifications for all industrial and retail purposes.</p>
+
+                        <p>Specify your boxes external dimensions, the printing option you require, the boxes outer base colour of either brown or white board and the Corrugated Grade needed, along with the quantity required, we can have your custom corrugated packaging, designed, manufactured and despatched in just 1 week!</p>
+
+                        <p>If you're requirements for a storage boxes, packing cartons or any other type of retail, industrial or distribution packaging in any other style,configuration or bespoke modifications, we will provide a detailed quotation if you complete our <a href="http://scdpackaging.co.uk/custom-printed-cardboard-boxes/bespoke-fefco-box-quotation-request" target="_blank" rel="noopener">Corrugated Box Quotation Request</a> or by contacting our offices on 01933 318 185.</p>
+
+                        <p>For 0201 style boxes please use the calculator, for different&nbsp;styles or discounts on larger quantities please <a href="http://scdpackaging.co.uk/contact" target="_blank" rel="noopener">Contact Us</a>.&nbsp;</p>
+
+                        <p><font color="#666666" face="Century Gothic, Helvetica, sans-serif"><b>These are some of the reasons why SCD Packaging are one of the Leading Corrugated Cardboard Box Suppliers in the UK, and why we have so many valued, loyal and satistified clients:</b></font></p>
+                        <ul>
+                            <li>- We, Design, Manufacturer and Deliver within 7 Days</li>
+                            <li>- We offer the Very Best Prices on both Low Run and High Volume Quantities</li>
+                            <li>- We use Quality Materials and have the Highest Standards in Manufacturing, Production and Finishing of all our Printed Corrugated Boxes</li>
+                            <li>- We Offer unrivaled Professional, Ethical and Experienced Support and Service in all aspects of the services we provide></li>
+						</ul>	
+						<b>We're a Family Business! We're small enough to genuinely care, but we're also big enough to provide exceptional levels of service.  Our compact team of experts in their specific roles, operate with intregrity, respect for our clients, and, with confidentiality at all times!<b>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="alert alert-success email-success-msg alert-box">
+            We've sent you your Bespoke Box Quote! Please ensure you check your spam email box in case it's been incorrectly identified as junk mail, it happens I'm afraid!
+        </div>
+    </div>
+</div>
+<div class="container main-box">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <h3 class="card-header">Box Measurements</h3>
+                <div class="card-block">
+                    <h4 class="card-title">Enter Box Dimensions.</h4>
+                    <p class="card-text">This is the boxes internal measurements in millimetres. If You're not sure, call us on 01933 318 185.</p>
+                    <div class="alert alert-danger panels-wrong-size alert-box">
+                        Minimum Box Panel Size is 100mm, Maximum Box Panel Size is 1200mm
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1" style="width: 30%">Length</span>
+                        <input class="form-control" id="tb_length" name="tb_length" type="number" min="100" max="1200" value="400">
+                        <span class="input-group-addon" id="basic-addon1">mm</span>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1" style="width: 30%">Width</span>
+                        <input class="form-control" id="tb_width" name="tb_width" type="number" min="100" max="1200" value="400">
+                        <span class="input-group-addon" id="basic-addon1">mm</span>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1" style="width: 30%">Height</span>
+                        <input class="form-control" id="tb_depth" name="tb_depth" type="number" min="100" max="1200" value="400">
+                        <span class="input-group-addon" id="basic-addon1">mm</span>
+                    </div>
+                    <br>
+                    <p class="card-text"><img src='boxsmall.png' /></p>
+                    <p class="card-text"><b>Min Panel Size = 100mm, Max Panel Size = 1200mm</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <h3 class="card-header">Print Options</h3>
+                <div class="card-block">
+                    <p class="card-text">What printing requirements do you require?. *The base box colour can be utilised in the print process with some thought to the design. If you're interested in discussing these options, please call us on 01933 318 185</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="input-group">
+                                <input checked="checked" class="radio-button" name="tb_print-color" title="Plain" type="radio" value="no" /> Plain
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group">
+                                <input name="tb_print-color" class="radio-button" title="One Colour" type="radio" value="one" /> One Colour
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group">
+                                <input name="tb_print-color" class="radio-button" title="Two Colours" type="radio" value="two" /> Two Colours
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="card-text"><br><strong>Please Note: </strong> Both Single and Two Colour options carry a one off set up charge which impacts on the minimum order quantity, which is determined by the overall box dimensions. <br><p>Complete all the Box Calculator sections to determine the minimum short run quantities available and the associated overall costs. As a general rule, printing allows up to approximately 25% coverage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <h3 class="card-header">Box Base Colour</h3>
+                <div class="card-block">
+                    <p class="card-text">Please choose the colour of the boxes external corrugated paper you require.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="input-group">
+                                <input checked="checked" class="radio-button" name="tb_outside-paper" type="radio" value="Brown" /> Kraft
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group">
+                                <input name="tb_outside-paper" class="radio-button" type="radio" value="White" /> White
+							</div>
+                        </li>
+                    </ul>
+					<p class="card-text"><p>Remember, the boxes external colour can be used in the print process to enhance the design. If you're interested in discussing this, please call us on 01933 318 185</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h3 class="card-header">Corrugated Board Type</h3>
+                <div class="card-block">
+                    <p class="card-text">We provide a wide range of different corrugated board weights, strengths and in various configurations, so if you have more specific requirements, please call our offices on 01933 318 185. These configurations are the common variations - please specify the board type you require below.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="input-group">
+                                <input checked="checked" class="radio-button" name="tb_board" title="B flute" type="radio" value="a125ktb" /> Single Wall B flute (125K/B/125T)
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group">
+                                <input name="tb_board" class="radio-button" title="Double Wall BC flute" type="radio" value="a125ktbc" /> Double Wall BC flute (125K/BC/125T)
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group">
+                                <input name="tb_board" class="radio-button" title="Heavy Duty Double Wall BC flute" type="radio" value="a200ktbc" /> Heavy Duty Double Wall (200K/BC/125T)
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <h3 class="card-header">Quantity Required</h3>
+                <div class="card-block">
+                    <p class="card-text">How many of the boxes specified would you initially require?</p>
+                    <div class="input-group">
+                        <input class="calc-input form-control" id="tb_qty" min="1" name="tb_qty" type="number" value="10" />
+                        <span class="input-group-addon" id="basic-addon1">boxes</span>
+                    </div><br>
+					<p class="card-text">The minimum short run quantity for Custom Printed Boxes is determined by the box dimension.  ie. A 400 x 400 x 400 Printed box requires a minimum order of 152. Have a play and you'll quickly determine the minimum order for your box dimensions</p>
+				</div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h3 class="card-header">Results</h3>
+                <div class="card-block">
+                    <div class="alert alert-danger too-few-coloured-boxes alert-box">
+                        Unfortunately we can only provide a minimum quantity of Printed Boxes determined by the box size.  ie. A 400 x 400 x 400 Printed box requires a minimum order of 152. Have a play and you'll quickly determine the minimum order for your box dimensions
+                    </div>
+                    <div class="alert alert-danger too-few-boxes alert-box">
+                        Unfortunately we can only supply a minimum of 10 Boxes
+                    </div>
+                    <div class="alert alert-danger generic-error alert-box">
+                        Unfortunately we're unable to calculate your price. Please call us on 01933 318185 to discuss your requirements and pricing in more detail
+                    </div>
+                    <div class="alert alert-success office-better-deals alert-box">
+                        For large orders, please call us on 01933 318 185 to discuss your requirements and pricing in more detail
+                    </div>
+                    <p class="results-statement"></p>
+                    <div class="grand-total"><h2>&pound;</h2><h2 id="grand-total"></h2></div>
+                    <p class="per-box-statement">Cost per box:</p>
+                    <div class="price-per-box" ><h2>&pound;</h2><h2 id="per-box-price"></h2></div>
+                    <div class="price-per-box" ><label><input type="checkbox" id="add_vat" name="add_vat"/> Show cost inclusive of VAT</label></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row email-row">
+        <div class="col">
+            <div class="card">
+                <h3 class="card-header">Email Me This Custom Box Quote</h3>
+                <div class="card-block">
+                    <div class="alert alert-danger email-validation-error alert-box">
+                        It seems your email address is incorrect - please check it before attempting to submit your quotation again.
+                    </div>
+                    <div class="card-text"><br>Simply enter your email address and click the Send button to receive a copy of your quote!</div><br>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">Name</span>
+                        <input class="calc-input form-control" id="tb_name" min="1" name="tb_name" type="text" placeholder="" />
+                        <span class="input-group-addon" id="basic-addon1">Email</span>
+                        <input class="calc-input form-control" id="tb_email" min="1" name="tb_email" type="email" placeholder="" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary send-email" type="button">Send</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+	<hr>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+</script>
+
+<script>document.domain='https://github.com/walterlobster/calc.git';</script> 
+
+<script type="text/javascript">
+    var MINIMUM = 100; //MINIMUM SIZE FOR ANY ONE PANEL
+    var MAXIMUM = 1200; //MAXIMUM SIZE FOR ANY ONE PANEL
+    var MINIMUM_ORDER_PLAIN = 10; //QUANTITY OF PLAIN BOXES
+    var MINIMUM_ORDER_COLOURED = 200; //AREA OF PRINTED CARDBOARD - 1/2 COLOURS
+    var QUANTITY_FOR_BETTER_DEALS = 2500; //HOW MANY BOXES BEFORE SOMEONE COULD GET A DEAL OVER THE PHONE
+    var PLAIN_COLOUR_SURCHARGE = 0.00; //HOW MUCH EXTRA IS A PLAIN BOX
+    var SINGLE_COLOUR_SURCHARGE = 0.01; //HOW MUCH EXTRA TO ADD PER SINGLE COLOUR BOX
+    var TWO_COLOUR_SURCHARGE = 0.02; //HOW MUCH EXTRA TO ADD PER TWO TONE BOX
+    var THE_125KTB_SURCHARGE = 0; //VARIOUS SURCHARGES
+//    var THE_125KTBC_SURCHARGE = 1.45; //VARIOUS SURCHARGES - NO LONGER USED
+    var THE_200KTBC_SURCHARGE = 1.09; //VARIOUS SURCHARGES
+    var THE_ADDITIONAL_SURCHARGE = 1.00; //VARIOUS SURCHARGES
+    var SINGLE_COLOUR_ONE_OFF = 170.00;
+    var DOUBLE_COLOUR_ONE_OFF = 270.00;
+    var BROWN_PAPER_SURCHARGE = 1.00;
+    var WHITE_PAPER_SURCHARGE = 1.05;
+
+    // !!! DON'T TOUCH A THING BELOW THIS LINE !!! //
+    // !!! DON'T TOUCH A THING BELOW THIS LINE !!! //
+    // !!! DON'T TOUCH A THING BELOW THIS LINE !!! //
+    // !!! DON'T TOUCH A THING BELOW THIS LINE !!! //
+    // !!! DON'T TOUCH A THING BELOW THIS LINE !!! //
+    // !!! DON'T TOUCH A THING BELOW THIS LINE !!! //
+
+    $('.list-group-item').click(function() {
+        $(this).find('input:radio').prop('checked', true);
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+		
+			jQuery("#add_vat").prop('checked', false);
+        Calc();
+    });
+
+    function isEmail(email) {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(email);
+    }
+
+    function sendEmailQuotation() {
+        $('.email-validation-error').hide()
+        var tb_width = jQuery("#tb_width").val();
+        var tb_length = jQuery("#tb_length").val();
+        var tb_depth = jQuery("#tb_depth").val();
+        var tb_email = jQuery("#tb_email").val();
+		var tb_name = jQuery("#tb_name").val();
+        var tb_customer_qty = jQuery("#tb_qty").val();
+        var tb_print_color = jQuery("input[name=tb_print-color]:checked").val();
+        var tb_board = jQuery("input[name=tb_board]:checked").val();
+        var tb_outside_paper = jQuery("input[name=tb_outside-paper]:checked").val();
+        var grand_total = jQuery('#grand-total').text();
+        var per_box_price = jQuery('#per-box-price').text();
+        var price_with_vat = 'No';
+		if( jQuery("#add_vat").is(':checked') ){
+			price_with_vat	= 'Yes';
+		}
+        if (isEmail(tb_email)) {
+
+		jQuery.ajax({
+                url: 'send_box_quote_mail.php',
+                data: {
+                    height: tb_length,
+                    width: tb_width,
+                    depth: tb_depth,
+                    quantity: tb_customer_qty,
+                    print_color: tb_print_color,
+                    board_type: tb_board,
+                    outside_paper: tb_outside_paper,
+                    name: tb_name,
+                    email: tb_email,
+                    grand_total: grand_total,
+                    per_box_price: per_box_price,
+                    price_with_vat: price_with_vat
+                },
+                type: 'POST'
+            }).done(function() {
+                $('.main-box').slideUp();
+                $('.email-success-msg').slideDown()
+            });
+        } else {
+            $('.email-validation-error').slideDown()
+        }
+    }
+
+    function getBoardPrice(area, board) {
+        var PRICING_STRUCTURE = { //PRICING FOR 125KTB
+            a1_10ksm: {
+                'min': 0.01,
+                'max': 10,
+                'a125ktbc_sur': 1.07,
+                'cost': 11000
+            },
+            a10_25ksm: {
+                'min': 10.01,
+                'max': 25,
+                'a125ktbc_sur': 1.10,
+                'cost': 5300
+            },
+            a25_50ksm: {
+                'min': 25.01,
+                'max': 50,
+                'a125ktbc_sur': 1.15,
+                'cost': 2700
+            },
+            a50_100ksm: {
+                'min': 50.01,
+                'max': 100,
+                'a125ktbc_sur': 1.15,
+                'cost': 1750
+            },
+            a100_200ksm: {
+                'min': 101,
+                'max': 200,
+                'a125ktbc_sur': 1.25,
+                'cost': 1575
+            },
+            a200_500ksm: {
+                'min': 200.01,
+                'max': 500,
+                'a125ktbc_sur': 1.5,
+                'cost': 900
+            },
+            a500_1000ksm: {
+                'min': 500.01,
+                'max': 1000,
+                'a125ktbc_sur': 1.6,
+                'cost': 700
+            },
+            a1000_3000ksm: {
+                'min': 1000.01,
+                'max': 99999999,
+                'a125ktbc_sur': 1.6,
+                'cost': 510
+            }
+        };
+        for (var price in PRICING_STRUCTURE) {
+            if (area > parseInt(PRICING_STRUCTURE[price].min.toFixed(2)) && area < parseInt(PRICING_STRUCTURE[price].max.toFixed(2))) {
+                if (board === 'a125ktbc' || board === 'a200ktbc') {
+                    console.log('125sur is ' + PRICING_STRUCTURE[price].a125ktbc_sur)
+                    var poo = ((PRICING_STRUCTURE[price].cost * PRICING_STRUCTURE[price].a125ktbc_sur ) * parseFloat(THE_ADDITIONAL_SURCHARGE)).toFixed(2);
+                    return poo;
+                }
+                var poo = (PRICING_STRUCTURE[price].cost * parseFloat(THE_ADDITIONAL_SURCHARGE)).toFixed(2);
+                return poo;
+            }
+        }
+        return false
+    }
+
+    function getBoardPriceWithSurcharge(board_grade, area) {
+        var PRICING_SURCHARGES = {
+            a125ktb: {
+                'surcharge': THE_125KTB_SURCHARGE
+            },
+            a125ktbc: {
+                'surcharge': 0 
+            },
+            a200ktbc: {
+                'surcharge': THE_200KTBC_SURCHARGE
+            }
+        };
+
+        initial = 0;
+        result = 0;
+        initial = getBoardPrice(area, board_grade);
+        if (initial) {
+            switch (board_grade) {
+                case 'a125ktbc':
+//                    this surcharge is now added in the array up top based on the board grade prior to processing here - Jessica
+                    result = initial; //* parseFloat(PRICING_SURCHARGES.a125ktbc.surcharge)
+                    break;
+                case 'a200ktbc':
+//                    result = initial * parseFloat(PRICING_SURCHARGES.a125ktbc.surcharge)
+                    console.log('200ktbc sur = '+PRICING_SURCHARGES.a200ktbc.surcharge);
+                    console.log('initial ='+initial)
+                    result = initial * parseFloat(PRICING_SURCHARGES.a200ktbc.surcharge);
+                    console.log('result ='+result)
+                    break;
+                default:
+                    result = initial;
+                    break;
+            }
+            return result
+        } else {
+            $('.generic-error').show()
+        }
+    }
+
+    function Calc(callback) {
+        $('.alert-box').hide()
+        $('.email-row').slideUp()
+
+        var tb_width = jQuery("#tb_width");
+        var tb_length = jQuery("#tb_length");
+        var tb_depth = jQuery("#tb_depth");
+        var tb_customer_qty = jQuery("#tb_qty");
+        var tb_print_color = jQuery("input[name=tb_print-color]:checked");
+        var tb_board = jQuery("input[name=tb_board]:checked");
+        var tb_outside_paper = jQuery("input[name=tb_outside-paper]:checked");
+
+
+        var selected_colours = 0;
+        var selected_board = 0;
+        var selected_surcharge = 0;
+        var single_surcharge = 0;
+
+        var LENGTH = parseInt(tb_length.val());
+        var WIDTH = parseInt(tb_width.val());
+        var DEPTH = parseInt(tb_depth.val());
+        var QUANTITY = tb_customer_qty.val();
+        var OUTER_PAPER = tb_outside_paper.val();
+
+        var AREA = 0;
+        var TOTAL_AREA = 0;
+        var GRAND_TOTAL = 0;
+        var SINGLE_BOX_PRICE = 0;
+        var TOTAL_PER_BOX_SURCHARGES = 0;
+
+        var PRINT_COLOUR_TITLE = tb_print_color.attr('title');
+        var PRINT_COLOURS = tb_print_color.val();
+
+        var BOARD_TITLE = tb_board.attr('title');
+        var BOARD = tb_board.val();
+
+        if (QUANTITY > QUANTITY_FOR_BETTER_DEALS) {
+            $('.office-better-deals').show()
+            return
+        }
+
+        function doTheArea(LENGTH, WIDTH, DEPTH) {
+            return ((2 * LENGTH)+(2 * WIDTH)+50)*(WIDTH+DEPTH)/1000/1000;
+        }
+
+        if ((WIDTH >= MINIMUM && WIDTH <= MAXIMUM) && (LENGTH >= MINIMUM && LENGTH <= MAXIMUM) && (DEPTH >= MINIMUM && DEPTH <= MAXIMUM)) {
+
+            AREA = doTheArea(LENGTH, WIDTH, DEPTH); //the area of a single box
+
+            if (PRINT_COLOURS === 'no') { //plain box
+                if (QUANTITY < MINIMUM_ORDER_PLAIN) {
+                    $('.too-few-boxes').show()
+                    return
+                }
+                selected_surcharge = PLAIN_COLOUR_SURCHARGE
+            } else { //we have a coloured box on our hands
+                if ((AREA * QUANTITY) < MINIMUM_ORDER_COLOURED) {
+                    $('.too-few-coloured-boxes').show()
+                    return
+                }
+                //surcharges for color
+                if (PRINT_COLOURS === 'one') {
+                    selected_surcharge = SINGLE_COLOUR_SURCHARGE
+                    single_surcharge = SINGLE_COLOUR_ONE_OFF
+                } else { //the number of colours must be two or above
+                    selected_surcharge = TWO_COLOUR_SURCHARGE
+                    single_surcharge = DOUBLE_COLOUR_ONE_OFF
+                }
+                TOTAL_PER_BOX_SURCHARGES = selected_surcharge * QUANTITY;
+
+            }
+            TOTAL_AREA = AREA * QUANTITY
+//            console.log('total area ' + TOTAL_AREA + 'm2');
+//            console.log('price for area is ' + getBoardPrice(TOTAL_AREA));
+//            console.log('price for area with surcharge is ' + getBoardPriceWithSurcharge(BOARD, TOTAL_AREA));
+//            console.log('final area calc ' + (AREA * getBoardPriceWithSurcharge(BOARD, TOTAL_AREA)));
+            var bar = getBoardPriceWithSurcharge(BOARD, TOTAL_AREA)
+            var foo = ((AREA * bar) / 1000).toFixed(2);
+            SINGLE_BOX_PRICE = foo
+//            console.log(SINGLE_BOX_PRICE)
+            GRAND_TOTAL = (((SINGLE_BOX_PRICE * QUANTITY) + TOTAL_PER_BOX_SURCHARGES) + parseInt(single_surcharge));
+//            GRAND_TOTAL = ((TOTAL_AREA + TOTAL_PER_BOX_SURCHARGES) + parseInt(single_surcharge));
+            if (OUTER_PAPER == 'White') {
+                GRAND_TOTAL = GRAND_TOTAL * WHITE_PAPER_SURCHARGE;
+            } else {
+                GRAND_TOTAL = GRAND_TOTAL * BROWN_PAPER_SURCHARGE;
+            }
+            $('.results-statement').html(
+                    'To buy ' + QUANTITY + ' ' + LENGTH + ' x ' + WIDTH + ' x ' + DEPTH + ' boxes with ' +
+                            OUTER_PAPER.toLowerCase() + ' outer paper in ' + BOARD.toUpperCase().slice(1) + ' featuring ' + PRINT_COLOURS +
+                            ' colour(s) comes to: '
+            )
+            $('#per-box-price').html((GRAND_TOTAL / QUANTITY).toFixed(2))
+            $('#grand-total').html(GRAND_TOTAL.toFixed(2));
+            $('.email-row').slideDown();
+        } else {
+            $('.panels-wrong-size').show()
+        }
+        if (callback) {
+            callback()
+        }
+
+    }
+    jQuery(function () {
+		jQuery("#add_vat").change( function(){
+			if( '' != jQuery("#grand-total").text() && '' != jQuery("#per-box-price").text() ){
+				pbp_raw_price	= parseFloat(jQuery("#per-box-price").text());
+				gt_raw_price	= parseFloat(jQuery("#grand-total").text());
+				if( jQuery(this).is(':checked') ){
+					pbp_final_price	= pbp_raw_price + ( pbp_raw_price*20/100 );
+					gt_final_price	= gt_raw_price + ( gt_raw_price*20/100 );
+					
+					jQuery("#per-box-price").text(pbp_final_price.toFixed(2));
+					jQuery("#grand-total").text(gt_final_price.toFixed(2));
+				}else{
+					Calc();
+				}
+			}
+		});
+        jQuery("#tb_width,#tb_length,#tb_depth,#tb_qty").change(function () {
+			jQuery("#add_vat").prop('checked', false);
+            Calc();
+        });
+        jQuery("#tb_width,#tb_length,#tb_depth,#tb_qty").keyup(function () {
+			jQuery("#add_vat").prop('checked', false);
+            Calc();
+        });
+        jQuery("input[name=tb_board],input[name=tb_print-color],input[name=tb_outside-paper]").change(function () {
+            Calc();
+        });
+		
+        Calc();
+        jQuery('.send-email').click(function() {
+            sendEmailQuotation()
+        });
+    });
+</script>
+
+<script>
+document.domain='https://github.com/walterlobster/calc.git';
+</script>
